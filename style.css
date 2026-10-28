@@ -624,6 +624,7 @@ dialog::backdrop {
   font-weight: 700;
 }
 
+
 .privacy {
   font-size: 10px;
   line-height: 1.6;
@@ -1129,4 +1130,33 @@ dialog::backdrop {
 .picker-card h2 strong,
 .picker-card h2 span {
   color: inherit !important;
+}
+/* BRAND LOGO — keeps it small beside the title */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.brand-logo {
+  width: 100px;
+  height: 1000px;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  flex: 0 0 50px;
+  display: block;
+}
+
+.brand-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand-title small {
+  display: block;
+  margin-top: 3px;
 }
